@@ -19,6 +19,9 @@
 		F9254A7B18F0BC5E008B69B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9254A6318F0BC5E008B69B5 /* UIKit.framework */; };
 		F9254A8318F0BC5E008B69B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9254A8118F0BC5E008B69B5 /* InfoPlist.strings */; };
 		F9254A8518F0BC5E008B69B5 /* FlipAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9254A8418F0BC5E008B69B5 /* FlipAnimationTests.m */; };
+		F9254A9018F0BD0D008B69B5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9254A8F18F0BD0D008B69B5 /* FirstViewController.m */; };
+		F9254A9318F0BE9F008B69B5 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9254A9218F0BE9F008B69B5 /* NavigationControllerDelegate.m */; };
+		F9254A9618F0C1EF008B69B5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9254A9518F0C1EF008B69B5 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		F9254A8018F0BC5E008B69B5 /* FlipAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlipAnimationTests-Info.plist"; sourceTree = "<group>"; };
 		F9254A8218F0BC5E008B69B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F9254A8418F0BC5E008B69B5 /* FlipAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipAnimationTests.m; sourceTree = "<group>"; };
+		F9254A8E18F0BD0D008B69B5 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F9254A8F18F0BD0D008B69B5 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F9254A9118F0BE9F008B69B5 /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
+		F9254A9218F0BE9F008B69B5 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		F9254A9418F0C1EF008B69B5 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F9254A9518F0C1EF008B69B5 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,12 @@
 			children = (
 				F9254A6E18F0BC5E008B69B5 /* AppDelegate.h */,
 				F9254A6F18F0BC5E008B69B5 /* AppDelegate.m */,
+				F9254A8E18F0BD0D008B69B5 /* FirstViewController.h */,
+				F9254A8F18F0BD0D008B69B5 /* FirstViewController.m */,
+				F9254A9418F0C1EF008B69B5 /* SecondViewController.h */,
+				F9254A9518F0C1EF008B69B5 /* SecondViewController.m */,
+				F9254A9118F0BE9F008B69B5 /* NavigationControllerDelegate.h */,
+				F9254A9218F0BE9F008B69B5 /* NavigationControllerDelegate.m */,
 				F9254A7118F0BC5E008B69B5 /* Images.xcassets */,
 				F9254A6618F0BC5E008B69B5 /* Supporting Files */,
 			);
@@ -239,7 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9254A9618F0C1EF008B69B5 /* SecondViewController.m in Sources */,
+				F9254A9318F0BE9F008B69B5 /* NavigationControllerDelegate.m in Sources */,
 				F9254A7018F0BC5E008B69B5 /* AppDelegate.m in Sources */,
+				F9254A9018F0BD0D008B69B5 /* FirstViewController.m in Sources */,
 				F9254A6C18F0BC5E008B69B5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +455,7 @@
 				F9254A8A18F0BC5E008B69B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9254A8B18F0BC5E008B69B5 /* Build configuration list for PBXNativeTarget "FlipAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +464,7 @@
 				F9254A8D18F0BC5E008B69B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
