@@ -27,8 +27,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tapView = [[UIButton alloc] init];
+    self.tapView = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    self.tapView.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
     [self.tapView addTarget:self action:@selector(pushSecondViewController) forControlEvents:UIControlEventTouchUpInside];
+    self.tapView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:self.tapView];
     // Do any additional setup after loading the view.
 }
 
