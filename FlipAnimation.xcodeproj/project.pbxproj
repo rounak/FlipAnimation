@@ -22,6 +22,7 @@
 		F9254A9018F0BD0D008B69B5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9254A8F18F0BD0D008B69B5 /* FirstViewController.m */; };
 		F9254A9318F0BE9F008B69B5 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9254A9218F0BE9F008B69B5 /* NavigationControllerDelegate.m */; };
 		F9254A9618F0C1EF008B69B5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9254A9518F0C1EF008B69B5 /* SecondViewController.m */; };
+		F9254A9918F1588D008B69B5 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = F9254A9818F1588D008B69B5 /* Animator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		F9254A9218F0BE9F008B69B5 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
 		F9254A9418F0C1EF008B69B5 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		F9254A9518F0C1EF008B69B5 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F9254A9718F1588D008B69B5 /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		F9254A9818F1588D008B69B5 /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				F9254A9518F0C1EF008B69B5 /* SecondViewController.m */,
 				F9254A9118F0BE9F008B69B5 /* NavigationControllerDelegate.h */,
 				F9254A9218F0BE9F008B69B5 /* NavigationControllerDelegate.m */,
+				F9254A9718F1588D008B69B5 /* Animator.h */,
+				F9254A9818F1588D008B69B5 /* Animator.m */,
 				F9254A7118F0BC5E008B69B5 /* Images.xcassets */,
 				F9254A6618F0BC5E008B69B5 /* Supporting Files */,
 			);
@@ -256,6 +261,7 @@
 			files = (
 				F9254A9618F0C1EF008B69B5 /* SecondViewController.m in Sources */,
 				F9254A9318F0BE9F008B69B5 /* NavigationControllerDelegate.m in Sources */,
+				F9254A9918F1588D008B69B5 /* Animator.m in Sources */,
 				F9254A7018F0BC5E008B69B5 /* AppDelegate.m in Sources */,
 				F9254A9018F0BD0D008B69B5 /* FirstViewController.m in Sources */,
 				F9254A6C18F0BC5E008B69B5 /* main.m in Sources */,

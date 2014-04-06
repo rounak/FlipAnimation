@@ -9,6 +9,7 @@
 #import "NavigationControllerDelegate.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
+#import "Animator.h"
 
 @interface NavigationControllerDelegate ()
 @property UIPercentDrivenInteractiveTransition *interactionController;
@@ -73,12 +74,7 @@
                                                 fromViewController:(UIViewController*)fromVC
                                                   toViewController:(UIViewController*)toVC
 {
-    Animator *animator;
-    if (([fromVC isKindOfClass:[PhotoListViewController class]] && [toVC isKindOfClass:[ShotViewController class]]) || ([fromVC isKindOfClass:[ShotViewController class]] && [toVC isKindOfClass:[PhotoListViewController class]])) {
-        animator = [[ListShotAnimator alloc] init];
-    } else if (([fromVC isKindOfClass:[ShotViewController class]] && [toVC isKindOfClass:[UserViewController class]]) || ([fromVC isKindOfClass:[UserViewController class]] && [toVC isKindOfClass:[ShotViewController class]])) {
-        animator = [[ShotUserAnimator alloc] init];
-    }
+    Animator *animator = [[Animator alloc] init];
     animator.animationType = operation;
     return animator;
 }
