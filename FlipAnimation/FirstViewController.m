@@ -10,7 +10,7 @@
 #import "SecondViewController.h"
 
 @interface FirstViewController ()
-@property (nonatomic, strong) UIButton *tapView;
+
 @end
 
 @implementation FirstViewController
@@ -27,7 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tapView = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    self.title = @"First";
+    self.tapView = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 160, 284)];
+    [self.tapView setImage:[UIImage imageNamed:@"ffffff"] forState:UIControlStateNormal];
     self.tapView.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
     [self.tapView addTarget:self action:@selector(pushSecondViewController) forControlEvents:UIControlEventTouchUpInside];
     self.tapView.backgroundColor = [UIColor blueColor];
