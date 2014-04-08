@@ -16,7 +16,7 @@
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    return 2;
+    return 1;
 }
 
 #pragma mark - UIViewControllerContextTransitioning methods
@@ -49,14 +49,20 @@
 {
     //set the second ViewController's transform such that it can continue from where the tapView button animation stops. That is the angle should be 90 degrees, and the dimensions of the two views must match. So scale down toViewController
     toViewController.view.alpha = 0;
-    toViewController.view.layer.transform = CATransform3DRotate(CATransform3DScale(toViewController.view.layer.transform, 0.6, 0.6, 1) , -M_PI_2, 0, 1, 0);
+    CATransform3D rotate = CATransform3DRotate(CATransform3DScale(toViewController.view.layer.transform, 0.6, 0.6, 1) , -M_PI_2, 0, 1, 0);
+    rotate.m34 = 1.0 / -500;
+    toViewController.view.layer.transform = rotate;
     [[transitionContext containerView] addSubview:toViewController.view];
-    [UIView animateWithDuration:[self transitionDuration:transitionContext]/2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+    [UIView animateWithDuration:([self transitionDuration:transitionContext]/2) delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         //rotate tapView 90 degree, and simultaneously scale it up by 1.2 across x and y axes.
         CATransform3D rotateTransform = CATransform3DRotate(CATransform3DScale(fromViewController.tapView.layer.transform, 1.2, 1.2, 1), M_PI_2, 0, 1, 0);
+        rotateTransform.m34 = 1.0 / -500;
         fromViewController.tapView.layer.transform = rotateTransform;
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:[self transitionDuration:transitionContext]/2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration:([self transitionDuration:transitionContext]/2) delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+//            CATransform3D rotateTransform = CATransform3DRotate(CATransform3DScale(fromViewController.tapView.layer.transform, 1.2, 1.2, 1), M_PI_2, 0, 1, 0);
+//            rotateTransform.m34 = 1.0 / -500;
+//            fromViewController.tapView.layer.transform = rotateTransform;
             toViewController.view.alpha = 1;
             //making it identitiy transform autmatically rotates the view for the remaining angle and gives it the full frame.
             toViewController.view.layer.transform = CATransform3DIdentity;
